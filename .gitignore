@@ -1,11 +1,13 @@
+# ============================================================
 # Vivado generated files
+# ============================================================
+
 *.jou
 *.log
 *.str
 *.wdb
 
-# Vivado project-generated directories (note the leading * — Vivado
-# prefixes these with your project name, e.g. MyProject.cache/)
+# Vivado project-generated directories
 *.Xil/
 *.cache/
 *.hw/
@@ -14,37 +16,71 @@
 *.ipdefs/
 *.tmp/
 
-# Generated Vivado build output (implementation runs, IP outputs, checkpoints)
+# Generated Vivado build output
 *.runs/
 *.gen/
 *.dcp
+
 archive_project_summary.txt
 
-# NOTE: do NOT ignore *.srcs/ wholesale — that folder contains your actual
-# RTL (.v/.sv/.vhd), constraints (.xdc), testbenches, and IP configs (.xci).
-# Only the block-design-generated subpaths inside it are safe to exclude:
+# ============================================================
+# Vivado source directories
+# ============================================================
+
+# DO NOT ignore *.srcs/ wholesale.
+# It contains actual RTL, constraints, testbenches, and IP configs.
+
+# Generated Block Design HDL/simulation/synthesis files
 *.srcs/sources_1/bd/*/hdl/
 *.srcs/sources_1/bd/*/synth/
 *.srcs/sources_1/bd/*/sim/
+
+# Generated checkpoints
 *.srcs/utils_1/imports/**/*.dcp
 
-# Vitis (classic workspace)
-.metadata/
-.settings/
-Debug/
-Release/
-**/Debug/
-**/Release/
-*.launch
 
-# Vitis Unified IDE (2023.2+)
+# ============================================================
+# Vitis Unified IDE
+# ============================================================
+
+# Build output
 build/
 **/build/
 
+# Generated Xilinx files
+.Xil/
+**/.Xil/
+
+# Zynq FSBL generated files
+zynq_fsbl/
+**/zynq_fsbl/
+
+zynq_fsbl_bsp/
+**/zynq_fsbl_bsp/
+
+# Generated Vitis binaries
+*.elf
+*.bin
+
+# Vitis launch configurations
+*.launch
+
+# Vitis / Eclipse metadata
+.metadata/
+.settings/
+
+
+# ============================================================
 # OS files
+# ============================================================
+
 .DS_Store
 Thumbs.db
 
+
+# ============================================================
 # Editor files
+# ============================================================
+
 .vscode/
 .idea/
