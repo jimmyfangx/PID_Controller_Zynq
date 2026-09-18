@@ -1,0 +1,50 @@
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.wdb
+
+# Vivado project-generated directories (note the leading * — Vivado
+# prefixes these with your project name, e.g. MyProject.cache/)
+*.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.ipdefs/
+*.tmp/
+
+# Generated Vivado build output (implementation runs, IP outputs, checkpoints)
+*.runs/
+*.gen/
+*.dcp
+archive_project_summary.txt
+
+# NOTE: do NOT ignore *.srcs/ wholesale — that folder contains your actual
+# RTL (.v/.sv/.vhd), constraints (.xdc), testbenches, and IP configs (.xci).
+# Only the block-design-generated subpaths inside it are safe to exclude:
+*.srcs/sources_1/bd/*/hdl/
+*.srcs/sources_1/bd/*/synth/
+*.srcs/sources_1/bd/*/sim/
+*.srcs/utils_1/imports/**/*.dcp
+
+# Vitis (classic workspace)
+.metadata/
+.settings/
+Debug/
+Release/
+**/Debug/
+**/Release/
+*.launch
+
+# Vitis Unified IDE (2023.2+)
+build/
+**/build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
